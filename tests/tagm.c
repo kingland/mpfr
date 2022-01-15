@@ -1,6 +1,6 @@
 /* Test file for mpfr_agm.
 
-Copyright 1999, 2001-2021 Free Software Foundation, Inc.
+Copyright 1999, 2001-2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.
@@ -327,7 +327,7 @@ check_special (void)
   mpfr_set_ui (x, 1, MPFR_RNDN);
   mpfr_set_ui (y, 1, MPFR_RNDN);
   mpfr_agm (m, x, y, MPFR_RNDN);
-  MPFR_ASSERTN (mpfr_cmp_ui (m ,1) == 0);
+  MPFR_ASSERTN (mpfr_cmp_ui (m, 1) == 0);
 
   /* agm(-1,-2) is NaN */
   mpfr_set_si (x, -1, MPFR_RNDN);

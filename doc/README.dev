@@ -1,4 +1,4 @@
-Copyright 2002-2021 Free Software Foundation, Inc.
+Copyright 2002-2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.
@@ -230,6 +230,10 @@ To make a release (for the MPFR team):
        $ ./autogen.sh
        $ ./configure
        $ make distcheck
+     If need be, after "./autogen.sh", replace config.guess and config.sub
+     by their latest version (see URLs in these files), e.g. if they are
+     known to solve issues. But note that they may not have been fully
+     tested.
 
   6) Test the release version on different machines, with --enable-assert
      set to "yes", "no" (default), "none" and "full" respectively, with
@@ -659,6 +663,7 @@ The C language:
   http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf (C99)
   http://www.open-std.org/jtc1/sc22/wg14/www/C99RationaleV5.10.pdf
   http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf (C11 draft)
+  http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2731.pdf (C2x draft)
   http://home.datacomm.ch/t_wolf/tw/c/c9x_changes.html
 
 About undefined behavior:
@@ -1508,7 +1513,7 @@ of the tests/Makefile.am file.
 
 /* Test file for mpfr_func.
 
-Copyright 2021 Free Software Foundation, Inc.
+Copyright 2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.

@@ -1,6 +1,6 @@
 /* Test file for in-place operations.
 
-Copyright 2000-2021 Free Software Foundation, Inc.
+Copyright 2000-2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.
@@ -272,7 +272,7 @@ test4 (int (*testfunc)(mpfr_ptr, mpfr_srcptr, mpfr_srcptr, mpfr_srcptr,
                 }
 
               /* foo (a, a, a, a) */
-              testfunc (ref, op1, op1, op1 ,rnd);
+              testfunc (ref, op1, op1, op1, rnd);
               mpfr_set (res, op1, rnd);
               testfunc (res, res, res, res, rnd);
               if (mpfr_compare (res, ref))

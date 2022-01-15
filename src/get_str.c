@@ -1,6 +1,6 @@
 /* mpfr_get_str -- output a floating-point number to a string
 
-Copyright 1999-2021 Free Software Foundation, Inc.
+Copyright 1999-2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.
@@ -2815,7 +2815,7 @@ mpfr_get_str (char *s, mpfr_exp_t *e, int b, size_t m, mpfr_srcptr x,
           /* normalize a and truncate */
           if ((result[n + nx1 - 1] & MPFR_LIMB_HIGHBIT) == 0)
             {
-              mpn_lshift (a, result + nx1, n , 1);
+              mpn_lshift (a, result + nx1, n, 1);
               a[0] |= result[nx1 - 1] >> (GMP_NUMB_BITS - 1);
               exp_a --;
             }

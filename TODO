@@ -1,4 +1,4 @@
-Copyright 1999-2021 Free Software Foundation, Inc.
+Copyright 1999-2022 Free Software Foundation, Inc.
 Contributed by the AriC and Caramba projects, INRIA.
 
 This file is part of the GNU MPFR Library.
@@ -744,8 +744,6 @@ Table of contents:
 ##############################################################################
 7. Portability
 ##############################################################################
-
-- add a web page with results of builds on different architectures
 
 - [Kevin about texp.c long strings]
   For strings longer than c99 guarantees, it might be cleaner to
